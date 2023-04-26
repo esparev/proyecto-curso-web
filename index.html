@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./movil.css" />
+  </head>
+  <body>
+    <main class="principal">
+      <header class="cabecera">
+        <p class="cabecera__directorio"><span>Directorio --</span> Titulo de la pagina</p>
+        <h1 id="titulo" class="cabecera__titulo" contenteditable="true" spellcheck="false">
+          Titulo de pagina
+        </h1>
+      </header>
+      <section class="secccion-global">
+        <section class="seccion-tareas">
+          <h2 class="seccion-tareas__titulo" contenteditable="true" spellcheck="false">
+            Titulo de la seccion
+          </h2>
+          <hr />
+          <div class="seccion-tareas__tarea">
+            <input class="seccion-tareas__tarea--checkbox" type="checkbox" name="" id="" />
+            <p
+              class="seccion-tareas__tarea--p"
+              contenteditable="true"
+              spellcheck="false"
+              oninput="eliminarTarea(event)">
+              Texto
+            </p>
+          </div>
+          <div class="seccion-tareas__tarea">
+            <input class="seccion-tareas__tarea--checkbox" type="checkbox" name="" id="" />
+            <p
+              class="seccion-tareas__tarea--p"
+              contenteditable="true"
+              spellcheck="false"
+              oninput="eliminarTarea(event)">
+              Texto
+            </p>
+          </div>
+          <div class="seccion-tareas__tarea">
+            <input class="seccion-tareas__tarea--checkbox" type="checkbox" name="" id="" />
+            <p
+              class="seccion-tareas__tarea--p"
+              contenteditable="true"
+              spellcheck="false"
+              oninput="eliminarTarea(event)">
+              Texto
+            </p>
+          </div>
+          <div class="seccion-tareas__tarea">
+            <input class="seccion-tareas__tarea--checkbox" type="checkbox" name="" id="" />
+            <p
+              class="seccion-tareas__tarea--p"
+              contenteditable="true"
+              spellcheck="false"
+              oninput="eliminarTarea(event)">
+              Texto
+            </p>
+          </div>
+        </section>
+        <button class="seccion-tareas__boton" type="button" onclick="agregarTarea()">
+          Agregar elemento
+        </button>
+      </section>
+    </main>
+    <aside class="barra-lateral">
+      <h2 class="barra-lateral__titulo">Barra lateral</h2>
+      <h3 class="barra-lateral__categoria">Proyectos</h3>
+      <p class="barra-lateral__elemento">Lista de tareas</p>
+    </aside>
+    <script src="./api.js"></script>
+  </body>
+</html>
